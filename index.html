@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy - Arcwhin Haul</title>
+<style>
+  :root{--bg:#fbfbfd;--card:#fff;--ink:#1b2230;--sub:#5c667a;--line:#e3e7ef;--accent:#1d6fe0;}
+  @media (prefers-color-scheme:dark){:root{--bg:#0f1320;--card:#161c2c;--ink:#e7ebf4;--sub:#98a2b8;--line:#28304a;--accent:#6ea8ff;}}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,Segoe UI,system-ui,sans-serif;padding:40px 20px 80px}
+  main{max-width:720px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:36px 40px}
+  h1{font-size:28px;line-height:1.25;margin-bottom:6px}
+  h2{font-size:19px;margin:32px 0 10px;color:var(--accent)}
+  h3{font-size:16px;margin:22px 0 6px}
+  p{margin:12px 0;color:var(--ink)}
+  ul{margin:12px 0 12px 22px}
+  li{margin:6px 0}
+  code{background:rgba(127,127,127,.15);padding:1px 6px;border-radius:5px;font-size:14px}
+  strong{font-weight:650}
+  a{color:var(--accent)}
+  @media(max-width:600px){main{padding:24px 20px}body{padding:20px 12px 60px}}
+</style>
+</head>
+<body>
+<main>
+<h1>Privacy Policy — Arcwhin Haul</h1>
+
+<p style="color:var(--sub);font-size:14px"><strong>Last updated:</strong> 7 September 2026 &nbsp;&middot;&nbsp; <strong>Publisher:</strong> Arcwhin &nbsp;&middot;&nbsp; <strong>Applies to:</strong> the Arcwhin Haul browser extension for Google Chrome and Microsoft Edge</p>
+
+<h2>The short version</h2>
+
+<p>Arcwhin Haul collects nothing, stores nothing about you, and sends nothing anywhere.</p>
+
+<p>There is no account, no sign-in, no analytics, no telemetry, no advertising, and no tracking. The extension has no server. Nothing it sees ever leaves your computer.</p>
+
+<h2>What the extension handles, and why</h2>
+
+<p>To do its job the extension has to look at the page you are on. Here is everything it touches and what happens to it.</p>
+
+<h3>Page content it reads</h3>
+
+<p>It reads the addresses of images and videos on the page you are viewing — the <code>src</code> of image and video tags, <code>srcset</code> candidates, poster frames, and CSS background images.</p>
+
+<p>This happens entirely inside your browser. The addresses are held in memory only for as long as the popup or sidebar is showing them, and are discarded when you close it.</p>
+
+<h3>Media network requests it observes</h3>
+
+<p>Some sites, including most social networks, play video in a way that hides the real address from the page. The extension therefore watches network requests for media files so it can find an address you can actually download.</p>
+
+<p>What is recorded for each request: the URL, the request type, the content type, and the content length. That is all.</p>
+
+<p>What is <strong>never</strong> recorded: the body of any request or response, page text, form input, keystrokes, cookies, credentials, or requests for anything that is not a media file.</p>
+
+<p>Where it is held: in the browser's memory, and in <code>chrome.storage.session</code>, which the browser keeps in RAM and never writes to disk. It is cleared when you navigate to a new page, when you close the tab, and when you close the browser.</p>
+
+<p>Where it is sent: nowhere.</p>
+
+<h3>Files you download</h3>
+
+<p>Downloads are handed to the browser's own download manager, which fetches the file directly from the site it came from and saves it where your browser normally saves files. The extension does not proxy, copy, or inspect the contents of anything you download.</p>
+
+<h3>Settings</h3>
+
+<p>Two preferences — whether tiny images are hidden, and whether previews are enabled — are stored locally with <code>chrome.storage.local</code>. They stay on your machine and are not linked to you in any way.</p>
+
+<h2>Permissions, and why each one is needed</h2>
+
+<ul>
+<li><strong><code>downloads</code></strong> — to save a file you selected. This is the extension's whole purpose.</li>
+<li><strong><code>webRequest</code></strong> — to observe media request metadata, as described above. This is the</li>
+</ul>
+<p>  read-only form of the API. The extension cannot and does not block, redirect, or modify   any request.</p>
+<ul>
+<li><strong><code>scripting</code></strong> — to place the scanner and the sidebar into the page you are viewing.</li>
+<li><strong><code>storage</code></strong> — to remember your two preferences, and to hold the session-only capture.</li>
+<li><strong>Access to all sites (<code>&lt;all_urls&gt;</code>)</strong> — you can ask for media on any page, so the</li>
+</ul>
+<p>  extension cannot know in advance which sites it will be used on. It reads a page only   to find media on it, and only while you are using it.</p>
+
+<h2>Data sharing</h2>
+
+<p>None. There is nobody to share it with. No data is sold, rented, transferred, or disclosed to any third party, and none is used for advertising, profiling, or credit assessment.</p>
+
+<h2>Data retention and deletion</h2>
+
+<p>Nothing is retained. Everything the extension holds is discarded when you navigate away or close the browser. Removing the extension removes your two saved preferences with it.</p>
+
+<p>Because no personal data is collected, there is nothing to export and nothing to request the deletion of. If you would like confirmation of that in writing, use the contact address below.</p>
+
+<h2>Philippine Data Privacy Act (RA 10173)</h2>
+
+<p>Arcwhin is based in the Philippines. Arcwhin Haul processes <strong>no personal information and no sensitive personal information</strong> as those terms are defined in RA 10173. It performs no profiling and makes no automated decisions about any person. Since no personal data is collected, transferred, or stored, the Act's consent, breach-notification, and data-subject request obligations are not engaged. Should that ever change, this policy will be updated before the change ships, and consent will be asked for explicitly rather than assumed.</p>
+
+<h2>Children</h2>
+
+<p>The extension is not directed at children and collects no data from anyone, including children.</p>
+
+<h2>Changes to this policy</h2>
+
+<p>If the extension ever begins handling data differently, this page will be updated and the date at the top changed. Material changes will also be noted in the extension's store listing release notes.</p>
+
+<h2>Contact</h2>
+
+<p>Questions about this policy: developers.camper@zendaita.com</p>
+
+</main>
+</body>
+</html>
