@@ -68,15 +68,11 @@
 
 <ul>
 <li><strong><code>downloads</code></strong> — to save a file you selected. This is the extension's whole purpose.</li>
-<li><strong><code>webRequest</code></strong> — to observe media request metadata, as described above. This is the</li>
-</ul>
-<p>  read-only form of the API. The extension cannot and does not block, redirect, or modify   any request.</p>
-<ul>
+<li><strong><code>webRequest</code></strong> — to observe media request metadata, as described above. This is the read-only form of the API. The extension cannot and does not block, redirect, or modify any request.</li>
 <li><strong><code>scripting</code></strong> — to place the scanner and the sidebar into the page you are viewing.</li>
 <li><strong><code>storage</code></strong> — to remember your two preferences, and to hold the session-only capture.</li>
-<li><strong>Access to all sites (<code>&lt;all_urls&gt;</code>)</strong> — you can ask for media on any page, so the</li>
+<li><strong>Access to all sites (<code>&lt;all_urls&gt;</code>)</strong> — you can ask for media on any page, so the extension cannot know in advance which sites it will be used on. It reads a page only to find media on it, and only while you are using it.</li>
 </ul>
-<p>  extension cannot know in advance which sites it will be used on. It reads a page only   to find media on it, and only while you are using it.</p>
 
 <h2>Data sharing</h2>
 
